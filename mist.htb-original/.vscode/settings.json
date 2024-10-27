@@ -1,0 +1,147 @@
+{
+    "terminal.integrated.profiles.linux": {
+        "zsh-shell": {
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "meterpreter-handler": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "METASPLOIT_HANDLER_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "msfconsole": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "METASPLOIT_CONSOLE_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "netcat-handler": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "REVERSE_SHELL_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "web-delivery": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "WEB_DELIVERY_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+    },
+    "terminal.integrated.profiles.osx": {
+        "zsh-shell": {
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "meterpreter-handler": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "METASPLOIT_HANDLER_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "msfconsole": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "METASPLOIT_CONSOLE_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "netcat-handler": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "REVERSE_SHELL_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "web-delivery": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}",
+                "WEB_DELIVERY_MODE": "True"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "source ${workspaceFolder}/.vscode/source.zsh"
+            ]
+        },
+        "kali-orbstack": {
+            "overrideName": true,
+            "env": {
+                "PROJECT_FOLDER": "${workspaceFolder}"
+            },
+            "path": "zsh",
+            "args": [
+                "-c",
+                "orb -u root source ${workspaceFolder}/.vscode/source_kali-orbstack.zsh"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh-shell",
+    "terminal.integrated.defaultProfile.linux": "zsh-shell",
+    "terminal.integrated.automationProfile.osx": {
+        "path": "zsh",
+    },
+    "terminal.integrated.automationProfile.linux": {
+        "path": "zsh",
+    },
+    "files.associations": {
+        "*.nuclei": "yaml"
+    },
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/projectdiscovery/nuclei/main/nuclei-jsonschema.json": "*.nuclei"
+    },
+}

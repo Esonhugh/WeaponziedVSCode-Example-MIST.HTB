@@ -1,0 +1,41 @@
+[5236:4704:0225/044117.413:1587187:VERBOSE1:trace_logging.cc(21)] Register TraceLogging provider
+[5236:4704:0225/044117.441:1587218:VERBOSE1:setup_main.cc(2940)] Command Line: "C:\Program Files (x86)\Microsoft\Edge\Application\122.0.2365.52\Installer\setup.exe" --configure-user-settings --verbose-logging --system-level --msedge --channel=stable --force-configure-user-settings
+[5236:4704:0225/044117.469:1587250:VERBOSE1:setup_main.cc(2946)] system install is 1
+[5236:4704:0225/044117.484:1587265:WARNING:app_command.cc(95)] Error reading CommandLine value from registry: 2
+[5236:4704:0225/044117.484:1587265:VERBOSE1:app_commands.cc(51)] Skipping over key "on-logon-autolaunch" as it does not appear to hold a product command.
+[5236:4704:0225/044117.597:1587375:VERBOSE1:installer_state.cc(95)] Install
+[5236:4704:0225/044117.868:1587640:VERBOSE1:install_util.cc(305)] Windows NT 10.0.20348
+[5236:4704:0225/044117.880:1587656:VERBOSE1:install.cc(1352)] Executing HandleActiveSetupForBrowser. Force: 1
+[5236:4704:0225/044117.883:1587656:VERBOSE1:install_worker.cc(1667)] Adding unregistration items for per-user Metro keys.
+[5236:4704:0225/044117.883:1587656:VERBOSE1:work_item_list.cc(32)] Beginning execution of work item list Cleanup deprecated per-user registrations
+[5236:4704:0225/044117.883:1587656:VERBOSE1:registry_util.cc(24)] Deleting registry key Software\Microsoft\Edge\Metro
+[5236:4704:0225/044117.883:1587656:VERBOSE1:registry_util.cc(24)] Deleting registry key Software\Microsoft\Edge\Metro
+[5236:4704:0225/044117.883:1587656:VERBOSE1:work_item_list.cc(53)] Successful execution of work item list Cleanup deprecated per-user registrations
+[5236:4704:0225/044117.883:1587656:VERBOSE1:install.cc(839)] Launching ""C:\Program Files (x86)\Microsoft\Edge\Application\122.0.2365.52\Installer\setup.exe" --msedge --channel=stable --system-level --verbose-logging --installerdata="C:\Program Files (x86)\Microsoft\Edge\Application\master_preferences" --create-shortcuts=1 --install-level=0" to create shortcuts
+[5100:632:0225/044117.923:1587703:VERBOSE1:trace_logging.cc(21)] Register TraceLogging provider
+[5100:632:0225/044117.923:1587703:VERBOSE1:setup_main.cc(2940)] Command Line: "C:\Program Files (x86)\Microsoft\Edge\Application\122.0.2365.52\Installer\setup.exe" --msedge --channel=stable --system-level --verbose-logging --installerdata="C:\Program Files (x86)\Microsoft\Edge\Application\master_preferences" --create-shortcuts=1 --install-level=0
+[5100:632:0225/044117.923:1587703:VERBOSE1:setup_main.cc(2946)] system install is 1
+[5100:632:0225/044117.923:1587703:WARNING:app_command.cc(95)] Error reading CommandLine value from registry: 2
+[5100:632:0225/044117.923:1587703:VERBOSE1:app_commands.cc(51)] Skipping over key "on-logon-autolaunch" as it does not appear to hold a product command.
+[5100:632:0225/044117.943:1587718:VERBOSE1:installer_state.cc(95)] Install
+[5100:632:0225/044117.980:1587750:VERBOSE1:install_util.cc(305)] Windows NT 10.0.20348
+[5100:632:0225/044117.983:1587765:VERBOSE1:shell_util.cc(4274)] IsEnterpriseDevice() returning true IsOS(OS_ANYSERVER)
+[5100:632:0225/044118.058:1587828:VERBOSE1:shell_util.cc(2331)] IsEdgeUWPDesktopShortcutPresent() returning false
+[5100:632:0225/044118.058:1587828:VERBOSE1:shell_util.cc(2836)] ShouldCreateDesktopShortcut() returning false
+[5100:632:0225/044118.058:1587828:VERBOSE1:install.cc(188)] Creating per-user Quick Launch "Microsoft Edge" shortcut to C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe.
+[5100:632:0225/044118.161:1587937:VERBOSE1:install.cc(188)] Creating per-user Start menu "Microsoft Edge" shortcut to C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe.
+[5100:632:0225/044118.161:1587937:VERBOSE1:setup_main.cc(3154)] NonInstall operation completed. Exit code: 99
+[5100:632:0225/044118.175:1587953:ERROR:persistent_histogram_storage.cc(155)] Persistent histograms fail to write to file: C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\20240225044118161_5100.pma
+[5236:4704:0225/044118.175:1587953:VERBOSE1:install.cc(855)] Shortcut creation process succeeded.
+[5236:4704:0225/044118.186:1587968:VERBOSE1:install.cc(1391)] Setting EdgeUWP associations as known to overcome shell bug.
+[5236:4704:0225/044118.187:1587968:VERBOSE1:shell_util.cc(4348)] Taking default associations
+[5236:4704:0225/044118.250:1588031:VERBOSE1:shell_util.cc(1854)] No default associations to modify were found.
+[5236:4704:0225/044118.250:1588031:VERBOSE1:shell_util.cc(4519)] Attempting to set Edge as the default MHT handler
+[5236:4704:0225/044118.252:1588031:VERBOSE1:shell_util.cc(4552)] IE is the default app for .mht
+[5236:4704:0225/044118.331:1588109:VERBOSE1:shell_util.cc(4593)] Successfully set Edge as the default app for .mht
+[5236:4704:0225/044118.331:1588109:VERBOSE1:shell_util.cc(4552)] IE is the default app for .mhtml
+[5236:4704:0225/044118.337:1588109:VERBOSE1:shell_util.cc(4593)] Successfully set Edge as the default app for .mhtml
+[5236:4704:0225/044118.338:1588109:VERBOSE1:install.cc(1455)] Active-Setup phase took 458 msecs.
+[5236:4704:0225/044118.338:1588109:VERBOSE1:install_util.cc(274)] Existing version found: 122.0.2365.52
+[5236:4704:0225/044118.338:1588109:VERBOSE1:setup_main.cc(3154)] NonInstall operation completed. Exit code: 0
+[5236:4704:0225/044118.351:1588125:ERROR:persistent_histogram_storage.cc(155)] Persistent histograms fail to write to file: C:\Program Files (x86)\Microsoft\Edge\Application\SetupMetrics\20240225044118338_5236.pma

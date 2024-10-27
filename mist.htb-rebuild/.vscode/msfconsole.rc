@@ -1,0 +1,4 @@
+set Prompt [Operator Console]
+set MeterpreterPrompt [Meterpreter Beacon]
+
+# 

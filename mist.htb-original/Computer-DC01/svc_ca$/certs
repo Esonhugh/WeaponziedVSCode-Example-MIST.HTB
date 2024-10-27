@@ -1,0 +1,81 @@
+mspki-enrollment-flag                : 41
+mspki-certificate-name-flag          : 1107296256
+pkidefaultcsps                       : 1,Microsoft Enhanced Cryptographic Provider v1.0
+distinguishedname                    : CN=ManagerAuthentication,CN=Certificate Templates,CN=Public Key 
+                                       Services,CN=Services,CN=Configuration,DC=mist,DC=htb
+pkidefaultkeyspec                    : 1
+objectclass                          : {top, pKICertificateTemplate}
+displayname                          : ManagerAuthentication
+name                                 : ManagerAuthentication
+mspki-certificate-application-policy : {1.3.6.1.5.5.7.3.1, 1.3.6.1.4.1.311.10.3.4, 1.3.6.1.5.5.7.3.4, 
+                                       1.3.6.1.5.5.7.3.2}
+pkiextendedkeyusage                  : {1.3.6.1.5.5.7.3.1, 1.3.6.1.4.1.311.10.3.4, 1.3.6.1.5.5.7.3.4, 
+                                       1.3.6.1.5.5.7.3.2}
+showinadvancedviewonly               : True
+mspki-certificate-policy             : 1.3.6.1.4.1.311.21.8.5839708.6945465.11485352.4768789.12323346.226.6538420.14514
+                                       029
+cn                                   : ManagerAuthentication
+flags                                : 131642
+whenchanged                          : 2/21/2024 1:53:35 PM
+instancetype                         : 4
+objectguid                           : c8358cc5-0eac-43b0-83e3-1244782c0e2b
+mspki-ra-signature                   : 0
+mspki-cert-template-oid              : 1.3.6.1.4.1.311.21.8.5839708.6945465.11485352.4768789.12323346.226.11059928.1489
+                                       6442
+pkimaxissuingdepth                   : 0
+objectcategory                       : CN=PKI-Certificate-Template,CN=Schema,CN=Configuration,DC=mist,DC=htb
+dscorepropagationdata                : {2/21/2024 1:36:01 PM, 2/21/2024 1:09:09 PM, 2/21/2024 12:21:16 PM, 2/21/2024 
+                                       12:19:50 PM...}
+mspki-minimal-key-size               : 4096
+mspki-private-key-flag               : 101056528
+pkikeyusage                          : {160, 0}
+whencreated                          : 2/21/2024 12:19:50 PM
+revision                             : 100
+pkiexpirationperiod                  : {0, 192, 35, 75...}
+usnchanged                           : 77918
+usncreated                           : 65666
+mspki-template-schema-version        : 2
+pkioverlapperiod                     : {0, 128, 166, 10...}
+mspki-template-minor-revision        : 34
+pkicriticalextensions                : 2.5.29.15
+
+mspki-enrollment-flag                : 41
+mspki-certificate-name-flag          : 1107296256
+pkidefaultcsps                       : 1,Microsoft Enhanced Cryptographic Provider v1.0
+distinguishedname                    : CN=BackupSvcAuthentication,CN=Certificate Templates,CN=Public Key 
+                                       Services,CN=Services,CN=Configuration,DC=mist,DC=htb
+pkidefaultkeyspec                    : 1
+objectclass                          : {top, pKICertificateTemplate}
+displayname                          : BackupSvcAuthentication
+name                                 : BackupSvcAuthentication
+mspki-certificate-application-policy : {1.3.6.1.4.1.311.10.3.4, 1.3.6.1.5.5.7.3.4, 1.3.6.1.5.5.7.3.2}
+pkiextendedkeyusage                  : {1.3.6.1.4.1.311.10.3.4, 1.3.6.1.5.5.7.3.4, 1.3.6.1.5.5.7.3.2}
+showinadvancedviewonly               : True
+mspki-certificate-policy             : 1.3.6.1.4.1.311.21.8.5839708.6945465.11485352.4768789.12323346.226.858803.979197
+cn                                   : BackupSvcAuthentication
+flags                                : 131642
+whenchanged                          : 2/21/2024 1:22:31 PM
+instancetype                         : 4
+objectguid                           : ba4759af-2d96-4852-9c89-b2a602522a80
+mspki-ra-signature                   : 0
+mspki-cert-template-oid              : 1.3.6.1.4.1.311.21.8.5839708.6945465.11485352.4768789.12323346.226.715207.970126
+                                       3
+pkimaxissuingdepth                   : 0
+objectcategory                       : CN=PKI-Certificate-Template,CN=Schema,CN=Configuration,DC=mist,DC=htb
+dscorepropagationdata                : {2/21/2024 1:22:30 PM, 2/21/2024 1:00:35 PM, 2/21/2024 12:43:53 PM, 1/1/1601 
+                                       12:00:00 AM}
+mspki-minimal-key-size               : 4096
+mspki-private-key-flag               : 16842768
+pkikeyusage                          : {160, 0}
+whencreated                          : 2/21/2024 12:43:53 PM
+revision                             : 100
+pkiexpirationperiod                  : {0, 192, 35, 75...}
+usnchanged                           : 73977
+usncreated                           : 69739
+mspki-template-schema-version        : 2
+pkioverlapperiod                     : {0, 128, 166, 10...}
+mspki-template-minor-revision        : 21
+pkicriticalextensions                : 2.5.29.15
+
+
+Get-DomainObject -SearchBase "CN=Configuration,DC=mist,DC=htb" -LDAPFilter "(objectclass=pkicertificatetemplate)" -Properties "name","mspki-certificate-policy"

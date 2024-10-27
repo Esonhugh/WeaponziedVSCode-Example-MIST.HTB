@@ -1,0 +1,68 @@
+Certificate Authorities
+  0
+    CA Name                             : mist-DC01-CA
+    DNS Name                            : DC01.mist.htb
+    Certificate Subject                 : CN=mist-DC01-CA, DC=mist, DC=htb
+    Certificate Serial Number           : 3BF0F0DDF3306D8E463B218B7DB190F0
+    Certificate Validity Start          : 2024-02-15 15:07:23+00:00
+    Certificate Validity End            : 2123-02-15 15:17:23+00:00
+    Web Enrollment                      : Disabled
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Permissions
+      Owner                             : MIST.HTB\Administrators
+      Access Rights
+        ManageCertificates              : MIST.HTB\Administrators
+                                          MIST.HTB\Domain Admins
+                                          MIST.HTB\Enterprise Admins
+        ManageCa                        : MIST.HTB\Administrators
+                                          MIST.HTB\Domain Admins
+                                          MIST.HTB\Enterprise Admins
+        Enroll                          : MIST.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : ManagerAuthentication
+    Display Name                        : ManagerAuthentication
+    Certificate Authorities             : mist-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectRequireCommonName
+                                          SubjectAltRequireUpn
+    Enrollment Flag                     : AutoEnrollment
+                                          PublishToDs
+                                          IncludeSymmetricAlgorithms
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Server Authentication
+                                          Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Validity Period                     : 99 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 4096
+    Issuance Policies                   : 1.3.6.1.4.1.311.21.8.5839708.6945465.11485352.4768789.12323346.226.6538420.14514029
+    Linked Groups                       : CN=Certificate Managers,CN=Users,DC=mist,DC=htb
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : MIST.HTB\Certificate Services
+                                          MIST.HTB\Domain Admins
+                                          MIST.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : MIST.HTB\Administrator
+        Write Owner Principals          : MIST.HTB\Domain Admins
+                                          MIST.HTB\Enterprise Admins
+                                          MIST.HTB\Administrator
+        Write Dacl Principals           : MIST.HTB\Domain Admins
+                                          MIST.HTB\Enterprise Admins
+                                          MIST.HTB\Administrator
+        Write Property Principals       : MIST.HTB\Domain Admins
+                                          MIST.HTB\Enterprise Admins
+                                          MIST.HTB\Administrator
+    [!] Vulnerabilities
+      ESC13                             : 'MIST.HTB\\Certificate Services' can enroll, template allows client authentication and issuance policy is linked to group ['CN=Certificate Managers,CN=Users,DC=mist,DC=htb']

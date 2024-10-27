@@ -1,0 +1,82 @@
+.
+├── Computer-DC01
+│   ├── dc01$.md
+│   ├── op_Sharon.Mullard
+│   │   ├── gmsa
+│   │   └── ntlm
+│   ├── svc_ca$
+│   │   ├── certs
+│   │   ├── exps.md
+│   │   ├── ntlm
+│   │   ├── reset_svccabackup_pass.md
+│   │   ├── svc_ca$.md
+│   │   ├── target.pfx_cert.pem
+│   │   └── target.pfx_priv.pem
+│   └── svc_cabackup
+│       ├── SAM.save
+│       ├── SECURITY.save
+│       ├── SYSTEM.save
+│       ├── abuse-ecs13.md
+│       ├── bootkey
+│       ├── ntlm
+│       ├── svc_cabackup.ccache
+│       ├── svc_cabackup.kirbi
+│       ├── svc_cabackup.md
+│       ├── svc_cabackup.pfx
+│       └── svc_cabackup_step1.ccache
+├── Computer-MS01
+│   ├── brandon
+│   │   ├── LocallData
+│   │   │   ├── cv_debug.log
+│   │   │   ├── fcade623-9468-4b75-8d04-4f10fb885126.tmp
+│   │   │   ├── link.ps1
+│   │   │   └── msedge_installer.log
+│   │   ├── certs
+│   │   │   ├── cert.pem
+│   │   │   └── cert.pfx
+│   │   ├── force-auth-ms01.md
+│   │   ├── hash
+│   │   ├── image.png
+│   │   ├── user-Brandon.Keywarp.md
+│   │   └── winpeas.data
+│   ├── config
+│   ├── ms01
+│   │   ├── 435n2mdK.pfx
+│   │   ├── Administrator.ccache
+│   │   ├── CRED_DUMPs.md
+│   │   ├── MACHINE
+│   │   ├── MS01.pem
+│   │   ├── MS01.pfx
+│   │   ├── XekcTOVA.pfx
+│   │   ├── hash
+│   │   ├── ms01$.ccache
+│   │   ├── ms01$.md
+│   │   └── ms01-to-admin.md
+│   ├── sharon
+│   │   ├── hash
+│   │   └── user-Sharon.Mullard.md
+│   └── svc_web
+│       ├── Wordpad.lnk
+│       ├── create-lnk.ps1.md
+│       ├── desktop.ini
+│       ├── hash(webserver)
+│       ├── ntlm
+│       ├── svc_web.md
+│       ├── webshell.php
+│       ├── webshell.zip
+│       └── webshell.zip.md
+├── DOMAIN
+│   ├── 20240331025817_BloodHound.zip
+│   ├── 20240331042052_BloodHound.zip
+│   ├── 20240404215351_Certipy.json
+│   ├── 20240404215351_Certipy.txt
+│   ├── 20240404215351_Certipy.zip
+│   ├── Computers.md
+│   ├── OLD-BLOODHOUND.zip
+│   └── hives
+│       └── SYSOLD.save
+├── index.md
+├── root.txt
+└── tree
+
+14 directories, 66 files

